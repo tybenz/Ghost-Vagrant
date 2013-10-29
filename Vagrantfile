@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 # NOTE: This should match your path to the Ghost source
-GhostSourcePath = "../Ghost"
+GhostSourcePath = "../core"
 
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration
