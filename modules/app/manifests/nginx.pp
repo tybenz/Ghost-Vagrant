@@ -13,6 +13,6 @@ class nginx {
 
   file { 'nginx-conf':
     path => "/etc/nginx/sites-enabled/default",
-    source => "puppet:///modules/ghost/config/nginx.conf",
+    source => "puppet:///modules/app/config/nginx.conf",
   }
 }

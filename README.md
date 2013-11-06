@@ -1,17 +1,6 @@
-#Ghost-Vagrant
+# node-vagrant
 
-Vagrant setup for developing Ghost
-
-## Changelog
-
-#### 1.2
-
-- changed the Ghost shared folder path to `/home/vagrant/code/Ghost`
-
-#### 1.1
-
-- changed compass to bourbon as an automatic gem install
-- NOTE: be sure to install the Guest Additions bit
+Vagrant setup for developing a node application
 
 ## Instructions
 

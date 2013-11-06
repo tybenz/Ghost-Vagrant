@@ -4,7 +4,7 @@ class casperjs {
 
     file { "phantomjs-src":
       path => "/home/vagrant/software/phantomjs-1.9.1-linux-x86_64.tar.bz2",
-      source => "puppet:///modules/ghost/software/phantomjs-1.9.1-linux-x86_64.tar.bz2",
+      source => "puppet:///modules/app/software/phantomjs-1.9.1-linux-x86_64.tar.bz2",
     }
 
     exec { "extract-phantomjs":
