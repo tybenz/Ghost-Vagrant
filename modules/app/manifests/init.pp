@@ -50,21 +50,9 @@ class app($node_version = "v0.10.5") {
 
     # Examples of installing packages from a package.json if we need to.
     exec { "npm-install-packages":
-      cwd => "/home/vagrant/code/Ghost",
+      cwd => "/home/vagrant/code/app",
       command => "npm install",
       require => Exec['install-node'],
-    }
-
-    exec { "git submodule update":
-      cwd     => "/home/vagrant/code/Ghost",
-      command => "git submodule update --init",
-      require => Class["essentials"]
-    }
-
-    exec { "grunt init":
-      cwd => "/home/vagrant/code/Ghost",
-      command => "grunt init",
-      require => Exec["npm-install-packages"]
     }
 
 }

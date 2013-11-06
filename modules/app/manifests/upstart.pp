@@ -3,7 +3,7 @@ class upstart {
     file { "app-conf":
         ensure  => file,
         path => "/etc/init/app.conf",
-        source => "puppet:///modules/ghost/config/app.conf"
+        source => "puppet:///modules/app/config/app.conf"
     }
 
     service { 'app':
