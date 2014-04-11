@@ -1,0 +1,8 @@
+{
+  "name": "node-project",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4"
+  }
+}

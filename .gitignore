@@ -4,3 +4,7 @@
 .idea/*
 *.iml
 projectFilesBackup
+
+node_modules
+
+node_app.log

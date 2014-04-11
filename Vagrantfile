@@ -1,9 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# NOTE: This should match your path to the app source
-AppSourcePath = "../app"
-
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -35,7 +32,7 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder AppSourcePath, "/home/vagrant/code/app", :nfs => true
+  # config.vm.synced_folder AppSourcePath, "/home/vagrant/code/app", :nfs => true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -63,8 +60,8 @@ Vagrant.configure("2") do |config|
   # You will need to create the manifests directory and a manifest in
   # the file base.pp in the manifests_path directory.
   config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "manifests"
+    puppet.manifests_path = "puppet"
     puppet.manifest_file  = "base.pp"
-    puppet.module_path = "modules"
+    puppet.module_path = "puppet/modules"
   end
 end
